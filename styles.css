@@ -1,0 +1,97 @@
+.root{
+    background-color: #CFF5E7;
+}
+
+.main{
+    height: 100vh;
+}
+
+.budgetInputDiv{
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#budgetInputText{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 50%;
+}
+
+#budgetInputBtn{
+    border-radius: 5px;
+    background-color: #8F43EE;
+    margin-top: 20px;
+    color: azure;
+    font-weight: bold;
+}
+
+.expenseDiv{
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#expenseNameInput{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 50%;
+}
+
+#expenseInput{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 50%;
+}
+
+.expenseInputDiv{
+    background-color: whitesmoke;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#expenseBtn{
+    background-color: #8F43EE;
+    margin-top: 20px;
+    color: azure;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+#expenseBtn:hover {
+    background-color: #D7BBF5;
+    color: black;
+}
+
+#expenseBtn:active  {
+  box-shadow: 0 5px #666;
+  transform:scale(1.5);
+}
+
+#budgetInputBtn:hover{
+    background-color: #D7BBF5;
+    color: black;
+}
+
+#budgetInputBtn:active {
+    box-shadow: 0 2px #666;
+    transform:scale(1.5);
+}
+
+#finalResult{
+    background-color: whitesmoke;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    display: none;
+}
+
+#deleteBtn{
+    color: red;
+}

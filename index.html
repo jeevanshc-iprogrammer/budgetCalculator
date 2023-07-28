@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Budget</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="./styles.css">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container-fluid root">
+        <div class="container main">
+            <h1 class="text-center">BUDGET APP</h1>
+            <hr>
+            <div class="row">
+                <div class="col-md-6 mt-3 p-3">
+                    <div class="container budgetInputDiv">
+                        <h1>Please Enter Your Budget </h1> <br>
+                        <input type="text" id="budgetInputText">
+                        <div class="container text-center">
+                            <button class="btn " id="budgetInputBtn" onclick="budgetAction()">ENTER</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-3 p-3">
+                    <div class="container expenseDiv">
+                        <div class="row">
+                            <div class="col-4 text-center">
+                                <h2>Budget</h2> <br> <br>
+                                <p class="display-6" id="budgetDetail">0</p>
+                            </div>
+                            <div class="col-4">
+                                <h2>Expense</h2> <br> <br>
+                                <p class="display-6" id="expenseDetail">0</p>
+                            </div>
+                            <div class="col-4">
+                                <h2>Balance</h2> <br> <br>
+                                <p class="display-6" id="balanceDetail">0</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 mt-3 p-3">
+                    <div class="container expenseInputDiv text-center text-dark p-5">
+                        <h1>Please Enter Your Expense </h1> <br>
+                        <input type="text" id="expenseNameInput" class="w-50" style="border-radius: 5px;">
+                        <h1><br>Please Enter Your Expense Amount</h1> <br>
+                        <input type="text" id="expenseInput" class="w-50" style="border-radius: 5px;">
+                        <div class="container text-center">
+                            <button class="btn mt-5 mb-2" id="expenseBtn"
+                                onclick="expenseAction()">ENTER</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mt-3 p-3">
+                    <div class="container p-2 text-center" id="finalResult">
+                        <div class="table">
+                            <table>
+                                <thead>
+                                    <tr style="justify-content: space-evenly; ">
+                                        <td style="padding-right: 60px; padding-left: 50px;">Expense Name</td>
+                                        <td style="padding-right: 60px; ">Expense Cost</td>
+                                        <td style="padding-right: 60px; ">Action</td>
+                                    </tr>
+                                </thead>
+
+                                <tbody class="listBody">
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap JavaScript Libraries -->
+
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
